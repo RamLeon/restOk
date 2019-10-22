@@ -1,0 +1,57 @@
+.container-estado-pedido {
+    border-radius: 4px;
+    margin: 16px;
+
+    p {
+        font-size: 16px;
+        line-height: 56px;
+        padding: 0 0 0 16px;
+        margin: 0;
+        color: #444444;
+        background: #FFFFFF;
+        border-radius: 4px;
+    }
+
+    .estado-pedido {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin-top: 16px;
+        border: 1px solid #dddddd;
+        border-radius: 4px;
+
+        .container-estado {
+            width: calc(25% - 1px);
+            border-right: 1px solid #dddddd;
+            height: 100vh;
+
+            p {
+                font-size: 16px;
+                color: #444444;
+                border: inherit;
+                background: inherit;
+            }
+
+            .box-estado {
+                background: #FFFFFF;
+                margin: 8px;
+                border-radius: 4px;
+                box-shadow: 0 2px 4px 0 rgba(25, 25, 25, 0.1);
+                padding: 8px;
+
+                p {
+                    line-height: inherit;
+                    padding: 0;
+                }
+
+            }
+
+            &:last-child {
+                border: inherit;
+            }
+        }
+    }
+
+}

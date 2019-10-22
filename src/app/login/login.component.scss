@@ -1,0 +1,81 @@
+.container {
+    background: url(../../assets/images/back-login.jpg);
+    width: 100%;
+    height: 100%;
+    background-position: center center;
+    background-size: 100% 100%;
+    position: absolute;
+
+    .container-login {
+        position: relative;
+        width: 100%;
+        height: 100%;
+
+        .logo-restok {
+            background: url(../../assets/images/logo.png);
+            background-size: contain;
+            background-position: center top;
+            height: 70px;
+            display: block;
+            background-repeat: no-repeat;
+            width: 94px;
+            border-radius: 4px;
+            position: absolute;
+            left: 32px;
+            top: 32px;
+        }
+
+        .box-login {
+            background: rgba(0, 0, 0, 0.7);
+            width: 400px;
+            position: absolute;
+            border-radius: 8px;
+            left: 50%;
+            margin-left: -200px;
+            top: 50%;
+            padding: 16px 16px 32px 16px;
+            box-sizing: border-box;
+            margin-top: -175px;
+
+            .title {
+                text-align: center;
+                color: #ffffff;
+                line-height: 72px;
+                font-size: 32px;
+                margin-bottom: 32px;
+            }
+
+            mat-form-field {
+                width: 100%;
+
+                &.login {
+                    &.mat-form-field-appearance-legacy .mat-form-field-underline {
+                        background-color: white;
+                    }
+
+                    &.mat-form-field-appearance-legacy .mat-form-field-label {
+                        color: white;
+                    }
+
+                    .mat-input-element {
+                        color: white;
+                    }
+
+                    &.mat-form-field.mat-focused .mat-form-field-ripple {
+                        background-color: white;
+                    }
+                }
+            }
+
+            .container-btn {
+                width: 100%;
+                text-align: center;
+                margin-top: 32px;
+
+                button {
+                    width: 60%;
+                }
+            }
+        }
+    }
+}

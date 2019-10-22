@@ -1,0 +1,118 @@
+.container-step {
+    p {
+        span {
+            &::after {
+                content: "3";
+            }
+        }
+    }
+}
+
+.container-receta,
+.container-bebidas,
+.container-tragos {
+    background: #FFFFFF;
+    box-shadow: 0 2px 4px 0 rgba(25, 25, 25, 0.10);
+    border-radius: 4px;
+    margin: 16px;
+
+    p {
+        font-size: 16px;
+        border-bottom: 1px solid #dddddd;
+        line-height: 56px;
+        padding: 0 0 0 32px;
+        margin: 0;
+        color: #444444;
+    }
+
+    .box-receta,
+    .box-bebidas,
+    .box-tragos {
+        border-bottom: 1px solid #dddddd;
+        position: relative;
+        padding: 16px 0 0 0;
+
+        .container-select {
+            display: inline-block;
+
+            mat-form-field {
+                width: 78px;
+            }
+        }
+
+        .detalle {
+            margin-left: 16px;
+            display: inline-block;
+            font-family: "Montserrat";
+            width: calc(70% - 16px);
+
+            p {
+                line-height: inherit;
+                border-bottom: none;
+                color: #444444;
+                font-size: 16px;
+                font-weight: bold;
+                padding: 0;
+
+                +p {
+                    font-weight: normal;
+                    font-size: 14px;
+                }
+            }
+        }
+
+        .precio {
+            display: inline-block;
+            font-family: "Montserrat";
+            width: 15%;
+
+            p {
+                line-height: inherit;
+                border: none;
+                color: #444444;
+                text-align: right;
+                padding: 0;
+            }
+        }
+
+        .container-select {
+            width: calc(15% - 16px);
+            display: inline-block;
+            font-family: "Montserrat";
+            margin-right: 16px;
+            text-align: right;
+        }
+    }
+}
+
+.container-bebidas,
+.container-tragos {
+    p {
+        padding: 0 0 0 16px;
+    }
+
+    .box-receta {
+        .detalle {
+            width: calc(60% - 16px);
+        }
+
+        .precio {
+            width: 20%;
+        }
+
+        .container-select {
+            width: calc(20% - 16px);
+        }
+    }
+}
+
+.container-bebidas,
+.container-tragos {
+    width: calc(50% - 24px);
+    margin: 0 8px 16px 16px;
+    display: inline-block;
+}
+
+.container-tragos {
+    margin: 0 16px 16px 8px;
+}
